@@ -15,7 +15,8 @@ after_success:
    - mvn test
    
 notifications:
-   email: false
+   email:
+      varsha@shippable.com
       
 #archive: true
 
