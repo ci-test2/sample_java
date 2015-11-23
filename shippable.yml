@@ -5,6 +5,11 @@ jdk:
 #   - oraclejdk7
  #  - openjdk6
   # - oraclejdk8
+  
+env:
+ global:
+  - foo="var"
+  - variable="aaa"
    
 before_script:
    - mkdir -p shippable/testresults
