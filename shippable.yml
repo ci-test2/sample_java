@@ -7,11 +7,8 @@ jdk:
   # - oraclejdk8
   
 env:
- global:
-  - foo="var"
-  - variable="aaa"
-  - secure: ProD7iWuv+9U7SprEHaI0ZYF82fxGG3oEQ634sJ9oam460ZjLWEUPJq82YNNOqvko7TNovBkXMrGxoLl3kvmdeUOLytpJmRyWZ+p8CIzXmgHdHIiqAgZbxPSZO3XH+9KLFMYtP7fdffdqFo9HIVN0CKaLXpVq/6ULmB8KPYykueE3VjrOJfq+yWwExB19ZRD+Uc65UwkRKWaJiBGmbGPkCnH4H0QTo70Wmjn3mclSK9RkzIWIZBkAHxA7v2IA60qsTo056NCakulU0VLy4yzu2juOX7vN8y35qqzLSzJKsC1u0QEOx6XcIcIaZqMOBheC9CG15l2YSyGOEsM8H0JKw== 
-   
+   - secure: ryWwz8Qu0cdM0cE/ZLc/Bw2L0yp1+xFI063pL6NbawPdQsATti7kJBo357aNEPkwBy4K67vC2ko4m9Ox3OBrTQV/HeDhS+duJPkwlu53rvItiub5BSd9/d/mlNHm6R/T520KxyFLltO3/x6bop+q5ozcf0afoFeE38GxqIj4/TWCfsl7ndmVA6rSJ6O/xvtKdLOAImLF+rN7WA8c/yc65BkCusPvB9yd8t7cXq3OFYQojWJtSdnLZtkwH5jq6hqVEypZM/ZJwKPVNGtiwRKOwmgOtcmnF3whfjeEAuOXtaLUZe7NyCDa2NMC3Nki7RKd3skhsqSfhG+ocMPVp1LzVQ== 
+ 
 before_script:
    - mkdir -p shippable/testresults
    - mkdir -p shippable/codecovarage
