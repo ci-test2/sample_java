@@ -8,10 +8,11 @@ jdk:
   
 env:
    global:
-      - foo=bar
+      - foo="bar"
+      - variable="aaa"
    matrix:
-      - secure: ryWwz8Qu0cdM0cE/ZLc/Bw2L0yp1+xFI063pL6NbawPdQsATti7kJBo357aNEPkwBy4K67vC2ko4m9Ox3OBrTQV/HeDhS+duJPkwlu53rvItiub5BSd9/d/mlNHm6R/T520KxyFLltO3/x6bop+q5ozcf0afoFeE38GxqIj4/TWCfsl7ndmVA6rSJ6O/xvtKdLOAImLF+rN7WA8c/yc65BkCusPvB9yd8t7cXq3OFYQojWJtSdnLZtkwH5jq6hqVEypZM/ZJwKPVNGtiwRKOwmgOtcmnF3whfjeEAuOXtaLUZe7NyCDa2NMC3Nki7RKd3skhsqSfhG+ocMPVp1LzVQ== 
- 
+       - secure: WWPJj8DJAHMcdRYhO9lF8ygxKDD0J2PvR7BuiYXMY+K80nij4nz3uOivm4zv7kDVjAjb2tFLSmZ7m7WuzK4u8jA1j/52e2iAmkRNLYB3Pv1clOv37I7WABdS3UmqGrH0ev5a55lwKOloHuVhjMl25ycxS5twm10Jz+5wCu4Lefu2u0EkX42Z9EQXajwuQ/+NEDqDZIBTq+DXGeepr+3jNoFFpQg01dK7LE4v9NyYzCX454M1w8T7BfvaPW39g2iZmfGz4xGaZ4goJVhYLP3Ps3M3xU10UHbHU3ZWAl8IuogdJydK95sXSN6l7A5QU7BQCtcrUqVW7k+MhUzFs4ny4A== 
+    
 before_script:
    - mkdir -p shippable/testresults
    - mkdir -p shippable/codecovarage
