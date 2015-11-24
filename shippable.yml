@@ -7,10 +7,9 @@ jdk:
   # - oraclejdk8
   
 env:
-   global:
-      - foo="bar"
-      - variable="aaa"
-      - secure: WWPJj8DJAHMcdRYhO9lF8ygxKDD0J2PvR7BuiYXMY+K80nij4nz3uOivm4zv7kDVjAjb2tFLSmZ7m7WuzK4u8jA1j/52e2iAmkRNLYB3Pv1clOv37I7WABdS3UmqGrH0ev5a55lwKOloHuVhjMl25ycxS5twm10Jz+5wCu4Lefu2u0EkX42Z9EQXajwuQ/+NEDqDZIBTq+DXGeepr+3jNoFFpQg01dK7LE4v9NyYzCX454M1w8T7BfvaPW39g2iZmfGz4xGaZ4goJVhYLP3Ps3M3xU10UHbHU3ZWAl8IuogdJydK95sXSN6l7A5QU7BQCtcrUqVW7k+MhUzFs4ny4A== 
+   - foo="bar"
+   - variable="aaa"
+   - secure: WWPJj8DJAHMcdRYhO9lF8ygxKDD0J2PvR7BuiYXMY+K80nij4nz3uOivm4zv7kDVjAjb2tFLSmZ7m7WuzK4u8jA1j/52e2iAmkRNLYB3Pv1clOv37I7WABdS3UmqGrH0ev5a55lwKOloHuVhjMl25ycxS5twm10Jz+5wCu4Lefu2u0EkX42Z9EQXajwuQ/+NEDqDZIBTq+DXGeepr+3jNoFFpQg01dK7LE4v9NyYzCX454M1w8T7BfvaPW39g2iZmfGz4xGaZ4goJVhYLP3Ps3M3xU10UHbHU3ZWAl8IuogdJydK95sXSN6l7A5QU7BQCtcrUqVW7k+MhUzFs4ny4A== 
     
 before_script:
    - mkdir -p shippable/testresults
