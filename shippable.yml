@@ -7,7 +7,10 @@ jdk:
   # - oraclejdk8
   
 env:
-   - secure: ryWwz8Qu0cdM0cE/ZLc/Bw2L0yp1+xFI063pL6NbawPdQsATti7kJBo357aNEPkwBy4K67vC2ko4m9Ox3OBrTQV/HeDhS+duJPkwlu53rvItiub5BSd9/d/mlNHm6R/T520KxyFLltO3/x6bop+q5ozcf0afoFeE38GxqIj4/TWCfsl7ndmVA6rSJ6O/xvtKdLOAImLF+rN7WA8c/yc65BkCusPvB9yd8t7cXq3OFYQojWJtSdnLZtkwH5jq6hqVEypZM/ZJwKPVNGtiwRKOwmgOtcmnF3whfjeEAuOXtaLUZe7NyCDa2NMC3Nki7RKd3skhsqSfhG+ocMPVp1LzVQ== 
+   global:
+      - foo=bar
+   matrix:
+      - secure: ryWwz8Qu0cdM0cE/ZLc/Bw2L0yp1+xFI063pL6NbawPdQsATti7kJBo357aNEPkwBy4K67vC2ko4m9Ox3OBrTQV/HeDhS+duJPkwlu53rvItiub5BSd9/d/mlNHm6R/T520KxyFLltO3/x6bop+q5ozcf0afoFeE38GxqIj4/TWCfsl7ndmVA6rSJ6O/xvtKdLOAImLF+rN7WA8c/yc65BkCusPvB9yd8t7cXq3OFYQojWJtSdnLZtkwH5jq6hqVEypZM/ZJwKPVNGtiwRKOwmgOtcmnF3whfjeEAuOXtaLUZe7NyCDa2NMC3Nki7RKd3skhsqSfhG+ocMPVp1LzVQ== 
  
 before_script:
    - mkdir -p shippable/testresults
