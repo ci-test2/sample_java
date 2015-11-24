@@ -2,7 +2,7 @@ language: java
 
 jdk:
    - openjdk7
-#   - oraclejdk7
+   - oraclejdk7
  #  - openjdk6
   # - oraclejdk8
   
@@ -10,6 +10,7 @@ env:
  global:
   - foo="var"
   - variable="aaa"
+  - secure: ProD7iWuv+9U7SprEHaI0ZYF82fxGG3oEQ634sJ9oam460ZjLWEUPJq82YNNOqvko7TNovBkXMrGxoLl3kvmdeUOLytpJmRyWZ+p8CIzXmgHdHIiqAgZbxPSZO3XH+9KLFMYtP7fdffdqFo9HIVN0CKaLXpVq/6ULmB8KPYykueE3VjrOJfq+yWwExB19ZRD+Uc65UwkRKWaJiBGmbGPkCnH4H0QTo70Wmjn3mclSK9RkzIWIZBkAHxA7v2IA60qsTo056NCakulU0VLy4yzu2juOX7vN8y35qqzLSzJKsC1u0QEOx6XcIcIaZqMOBheC9CG15l2YSyGOEsM8H0JKw== 
    
 before_script:
    - mkdir -p shippable/testresults
@@ -18,6 +19,9 @@ before_script:
 after_success:
    - mvn clean cobertura:cobertura
    - mvn test
+   
+script:
+   echo $foo
    
 notifications:
    email:
