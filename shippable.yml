@@ -12,15 +12,17 @@ env:
    - secure: PQC4+3NB/VL3CPUhSsUYaVivI8Od+warspJZHbTP7XuexPlGCJG82Ax0Mj4uM1quFMcxSKh0HvTVyxb8ixozU4sIlEJDfg8q9C3z7B9m5Yo09cSwuNgm/o7uGtFjbiNABdWcQLkC1Us+myNXcyBtEqgw7y2gIItMDe8rE5P0FheHKmvXKjadVQZtz7F6KW920xInGCipq7F9F4l/z7mlP5Jhjokxl8kT5GHL0lk8TrV/Be6C6cr4ikHu4X3C9Ny1guLb/LgFgq7SbQWQhLmbeKYCFrFkby5deZycSOCYoatcW1duxmD1Z/zHBrxKM+ior/1fqj10j4OsHQkNiDsuFg==
    #- secure: WWPJj8DJAHMcdRYhO9lF8ygxKDD0J2PvR7BuiYXMY+K80nij4nz3uOivm4zv7kDVjAjb2tFLSmZ7m7WuzK4u8jA1j/52e2iAmkRNLYB3Pv1clOv37I7WABdS3UmqGrH0ev5a55lwKOloHuVhjMl25ycxS5twm10Jz+5wCu4Lefu2u0EkX42Z9EQXajwuQ/+NEDqDZIBTq+DXGeepr+3jNoFFpQg01dK7LE4v9NyYzCX454M1w8T7BfvaPW39g2iZmfGz4xGaZ4goJVhYLP3Ps3M3xU10UHbHU3ZWAl8IuogdJydK95sXSN6l7A5QU7BQCtcrUqVW7k+MhUzFs4ny4A== 
     
-matrix:
-  allow_failures:
-    - jdk: "oraclejdk7"
-  exclude:
-    - jdk: "openjdk6"
-    - jdk: "oraclejdk8"
-  include:
-    - jdk: "openjdk7"
-      env: test=aaa
+#matrix:
+ # allow_failures:
+  #  - jdk: "oraclejdk7"
+  #exclude:
+   # - jdk: "openjdk6"
+    #- jdk: "oraclejdk8"
+  #include:
+   # - jdk: "openjdk7"
+    #  env: test=aaa
+    
+build_image: shippable/minv2
       
 before_script:
    - mkdir -p shippable/testresults
