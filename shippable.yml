@@ -2,8 +2,8 @@ language: java
 
 jdk:
    - openjdk7
-  # - oraclejdk7
- #  - openjdk6
+   - oraclejdk7
+   - openjdk6
    - oraclejdk8
   
 env:
@@ -22,7 +22,7 @@ env:
    # - jdk: "openjdk7"
     #  env: test=aaa
     
-build_image: shipimg/ubuntu1404_java
+build_image: drydock/u14jav:tip
       
 before_script:
    - mkdir -p shippable/testresults
