@@ -33,7 +33,7 @@ after_success:
    - mvn test
    
 script:
-   echo $test
+   echo &test
    
 notifications:
    email:
@@ -41,4 +41,3 @@ notifications:
    irc: "chat.freenode.net#test-irc"
       
 archive: true 
-test;;;
