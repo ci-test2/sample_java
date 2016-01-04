@@ -33,7 +33,7 @@ after_success:
    - mvn test
    
 script:
-   echo &test
+   echo $test
    
 notifications:
    email:
